@@ -16,7 +16,7 @@ if(!empty($_POST['fio']))
   $result=$conn->query($sql); 
 }
 ?>
-		<div class="fon1"><h1> </h1></div>
+		<div class="fon1"><h1> SMOKIN SICK STYLE</h1></div>
     <section>
            <main class="main">
                <div class="container" style="width: 400px; height: 200px">
@@ -60,40 +60,36 @@ if(!empty($_POST['fio']))
 
           <input type="date" name="d_zaezda">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
                      
-            <select name="vremya" size="2" multiple>
-              <option selected value="s1">09:00</option>
-              <option value="s2">09:30</option>
-              <option value="s3">10:00</option>
-              <option value="s4">10:30</option>
-              <option value="s5">11:00</option>
-              <option value="s6">11:30</option>
-              <option value="s7">12:00</option>
-              <option value="s8">12:30</option>
-              <option value="s9">13:00</option>
-              <option value="s10">13:30</option>
-              <option value="s11">14:30</option>
-              <option value="s12">14:30</option>
-              <option value="s13">15:30</option>
-              <option value="s14">15:30</option>
-              <option value="s15">16:30</option>
-              <option value="s16">16:30</option>
-              <option value="s17">17:30</option>
-              <option value="s18">17:30</option>
-              <option value="s19">18:30</option>
-              <option value="s20">18:30</option>
-              <option value="s21">19:30</option>
-              <option value="s22">19:30</option>
+            <select name="vremya">
+              <option selected value="09:00">09:00</option>
+              <option value="09:30">09:30</option>
+              <option value="10:00">10:00</option>
+              <option value="10:30">10:30</option>
+              <option value="11:00">11:00</option>
+              <option value="11:30">11:30</option>
+              <option value="12:00">12:00</option>
+              <option value="12:30">12:30</option>
+              <option value="13:00">13:00</option>
+              <option value="13:30">13:30</option>
+              <option value="14:30">14:00</option>
+              <option value="14:30">14:30</option>
+              <option value="15:00">15:00</option>
+              <option value="15:30">15:30</option>
+              <option value="16:00">16:00</option>
+              <option value="16:30">16:30</option>
+              <option value="17:00">17:00</option>
+              <option value="17:30">17:30</option>
+              <option value="18:00">18:00</option>
+              <option value="18:30">18:30</option>
+              <option value="19:00">19:00</option>
+              <option value="19:30">19:30</option>
+              <option value="20:00">20:00</option>
             </select><br><br>
             
             						<input name="submit" type="submit" class="btn btn-primary" value="Войти">
-					
-                      </form>
-                    </div>        
-                  </div> 
-                    </div>
-                </div>
-                </div></div>
-                </div>       
-                </main>
-	</section>
+                        <br>
+         </div>  </div></div>  </div>
+          </form>
+          </div></div>   
+                </section>
 <?php include 'temp/footer.php'; ?>
