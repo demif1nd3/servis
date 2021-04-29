@@ -2,7 +2,7 @@
 include 'temp/headk.php'; 
 include 'database.php'; 
 
-if(!empty($_POST['fio']))
+if(!empty($_POST))
 {
   $fio = $_POST['fio'];   
   $tel = $_POST['tel']; 
@@ -12,8 +12,14 @@ if(!empty($_POST['fio']))
   $vremya = $_POST['vremya'];
   $id_stancia = $_POST['id_stancia'];
   $id_avto = $_POST['id_avto'];
-  $sql = ("insert into klient (fio, tel, email, prichina, d_zaezda, vremya, id_stancia, id_avto) values ('$fio','$tel', '$email', '$prichina', '$d_zaezda', '$vremya', '$id_stancia', '$id_avto')"); 
+}
+  if(!empty($fio) and !empty($tel) and !empty($email) and !empty($prichina) and !empty($d_zaezda) and !empty($vremya) and !empty($id_stancia) and !empty($id_avto))
+  {$sql = ("insert into klient (fio, tel, email, prichina, d_zaezda, vremya, id_stancia, id_avto) values ('$fio','$tel', '$email', '$prichina', '$d_zaezda', '$vremya', '$id_stancia', '$id_avto')"); 
   $result=$conn->query($sql); 
+}
+else
+{
+  $sms = 'Заполните все поля';
 }
 ?>
 		<div class="fon1"><h1> SMOKIN SICK STYLE</h1></div>
@@ -86,10 +92,14 @@ if(!empty($_POST['fio']))
               <option value="20:00">20:00</option>
             </select><br><br>
             
-            						<input name="submit" type="submit" class="btn btn-primary" value="Войти">
-                        <br>
-         </div>  </div></div>  </div>
-          </form>
-          </div></div>   
+            						<input name="submit" type="submit" class="btn btn-primary" value="Оформить">
+					                      </form>
+                    </div>        
+                  </div> 
+                    </div>
+                </div>
+                </div> </div>
+                </div> 
+                </div>       
                 </section>
 <?php include 'temp/footer.php'; ?>
